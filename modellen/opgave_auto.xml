@@ -1,0 +1,22 @@
+<modelleertaal>
+<modelregels>
+'Constante versnellingsmodel
+'Opgave auto
+dv = a * dt
+v = v + dv
+ds = v * dt
+s = s + ds
+t = t + dt
+
+als v < 0 dan
+   stop
+eindals
+</modelregels>
+<startwaarden>
+a = -5,0
+v = 130 / 3,6
+s = 0
+t = 0
+dt = 1
+</startwaarden>
+</modelleertaal>
