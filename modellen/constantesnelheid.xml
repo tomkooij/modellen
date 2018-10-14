@@ -1,0 +1,14 @@
+<modelleertaal>
+<modelregels>
+'Constante snelheidsmodel
+ds = v * dt
+s = s + ds
+t = t + dt
+</modelregels>
+<startwaarden>
+v = 3
+s = 0
+t = 0
+dt = 1
+</startwaarden>
+</modelleertaal>
