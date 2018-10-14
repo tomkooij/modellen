@@ -1,0 +1,17 @@
+<modelleertaal>
+<modelregels>
+'Constante versnellingsmodel
+dv = a * dt
+v = v + dv
+ds = v * dt
+s = s + ds
+t = t + dt
+</modelregels>
+<startwaarden>
+a = 2,5
+v = 0
+s = 0
+t = 0
+dt = 1
+</startwaarden>
+</modelleertaal>
