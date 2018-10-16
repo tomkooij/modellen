@@ -152,11 +152,16 @@
 		  // https://stackoverflow.com/a/44169739/4965175
 			var hash = window.location.hash.substr(1);
 			var url_params = hash.split('&').reduce(function (result, item) {
-    	var parts = item.split('=');
-    	result[parts[0]] = parts[1];
+				var parts = item.split('=');
+				result[parts[0]] = parts[1];
     	return result;
 			}, {});
 			console.log("params passed in URL", url_params);
+
+			var N_preset = url_params.N || false;
+			if (N_preset) {
+				$("#NBox").val(N_preset);
+			}
 
 			dropdown_update();
 			var model_preselected = url_params.model || false;
@@ -231,7 +236,7 @@
 					print_status("Status: ERROR.");
 				} // error();
 			}); //.ajax
-		}; // dropdown _load_model
+		};
 
 
 	</script>
