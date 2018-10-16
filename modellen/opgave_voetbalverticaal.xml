@@ -1,0 +1,32 @@
+﻿<modelleertaal>
+<startwaarden>
+g = 9,81
+m = 0,41
+k = 0,016
+v = 20
+s = 0
+t = 0
+dt = 0,1
+Fz = m * g
+
+
+
+</startwaarden>
+<modelregels>
+' Kracht-versnelling model
+' Opgave voetbal verticaal
+Fwl = k * v^2
+als v > 0 dan
+  Fwl = -Fwl
+eindals
+
+Fr = Fwl - Fz
+a = Fr/m
+
+v = v + a*dt
+s = s + v*dt
+t = t + dt
+
+als s < 0 dan stop eindals
+</modelregels>
+</modelleertaal>
