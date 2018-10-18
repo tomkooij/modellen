@@ -1,7 +1,7 @@
 ﻿<modelleertaal>
 <startwaarden>
 m = 70
-k = 0,04
+k = 0,4
 g = 9,81
 v = 0
 s = 0
