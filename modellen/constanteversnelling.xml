@@ -9,7 +9,7 @@ t = t + dt
 </modelregels>
 <startwaarden>
 a = 2,5
-v = 1
+v = 0
 x = 0
 t = 0
 dt = 1
