@@ -1,5 +1,3 @@
-# h3
+# c2modellen
 
-Modellen en webapp voor H3 Numerieke Modellen
-
-Alles woont in `gh-pages` branch`
+Modellen en webapp voor module C2 energie en arbeid
