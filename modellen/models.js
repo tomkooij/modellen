@@ -12,4 +12,7 @@ var model_index = [
     {url:'modellen/opgave_fietser.xml', title: 'Opgave fietser (antwoord)'},
     {url:'modellen/opgave_voetbalverticaal.xml', title: 'Opgave voetbal verticaal'},
     {url:'modellen/opgave_x-stream.xml', title: 'Opgave X-Stream'},
+    {url:'modellen/opgave_optrekkenmetconstantekracht.xml', title: 'Opgave optrekken met constante kracht'},
+    {url:'modellen/opgave_optrekkenmetconstantvermogen.xml', title: 'Opgave optrekken met constant vermogen'},
+
 ];
