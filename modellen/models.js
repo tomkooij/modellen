@@ -15,5 +15,6 @@ var model_index = [
     {url:'modellen/opgave_optrekkenmetconstantekracht.xml', title: 'Opgave optrekken met constante kracht'},
     {url:'modellen/opgave_optrekkenmetconstantvermogen.xml', title: 'Opgave optrekken met constant vermogen'},
     {url:'modellen/opgave_uitrijdenvaneenauto.xml', title: 'Opgave uitrijden van een auto'},
+    {url:'modellen/opgave_buckeyebullet.xml', title: 'Opgave Buckeye bullet'},
 
 ];
