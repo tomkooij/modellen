@@ -16,11 +16,11 @@ Pw = (Fwrol + Fwl) * ...
 Pres = Pm + Pw
 </modelregels>
 <startwaarden>
-k = …
+k = ...
 Fm = 600 'N
-Fwrol = -… 'N
+Fwrol = - ... 'N
 m = 1200 'kg
-v = … 'm/s
+v = ... 'm/s
 x = 0 'm
 t = 0 's
 dt = 0,1 's
