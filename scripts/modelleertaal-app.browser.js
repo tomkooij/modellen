@@ -628,9 +628,10 @@ var FileSaver = require('file-saver');
 //jshint loopfunc: true
 
 /* version history
-v4.4 (13sep19) Add read N=1000 from XML. Add error msg for ... "Vul hier iets in"
+v4.4.0 (13sep19) Add read N=1000 from XML. Add error msg for ... "Vul hier iets in"
+v4.4.1 (15sep19) Accept ... and unicode symbol '...' as BLANK (Vul hier in error)
 */
-var version = "v4.4 - 13sep2019";
+var version = "v4.4.1 - 15sep2019";
 
 
 function ModelleertaalApp(params) {
@@ -707,7 +708,11 @@ function ModelleertaalApp(params) {
 
 
   $(this.dom_plot).click(function() {
-    self.do_plot();
+    if (self.results.length === 0) {
+        alert('Geen resultaten. Druk eerst op Run!');
+    } else {
+        self.do_plot();
+    }
     //self.print_status("Plot OK.");
   });
 
@@ -1037,7 +1042,8 @@ ModelleertaalApp.prototype.print_table = function(limit) {
 ModelleertaalApp.prototype.do_plot = function() {
 
   if (this.results.length === 0) {
-    alert('Geen resultaten. Druk eerst op Run!');
+    //alert('Geen resultaten. Druk eerst op Run!');
+    console.log('No results! cannot plot');
     return false;
   }
   this.scatter_plot = [];
@@ -2238,17 +2244,17 @@ case 31:return 15
 break;
 case 32:return 14
 break;
-case 33:return 7
+case 33:return 32
 break;
 case 34:return 32
 break;
-case 35:return 32
+case 35:return 7
 break;
 case 36:return 5
 break;
 }
 },
-rules: [/^(?:\s+)/i,/^(?:\t+)/i,/^(?:'[^\n]*)/i,/^(?:\/\*(.|\n|\r)*?\*\/)/i,/^(?:\/\/[^\n]*)/i,/^(?:#[^\n]*)/i,/^(?:\()/i,/^(?:\))/i,/^(?:pi\b)/i,/^(?:π)/i,/^(?:==)/i,/^(?:>=)/i,/^(?:<=)/i,/^(?:>)/i,/^(?:<)/i,/^(?:!|niet\b)/i,/^(?:onwaar\b)/i,/^(?:waar\b)/i,/^(?:=)/i,/^(?::=)/i,/^(?:[0-9]*["."","][0-9]+([Ee][+-]?[0-9]+)?)/i,/^(?:[0-9]+["."","][0-9]*([Ee][+-]?[0-9]+)?)/i,/^(?:[0-9]+([Ee][+-]?[0-9]+)?)/i,/^(?:\^)/i,/^(?:\+)/i,/^(?:-)/i,/^(?:\*)/i,/^(?:\/)/i,/^(?:eindals\b)/i,/^(?:als\b)/i,/^(?:dan\b)/i,/^(?:stop\b)/i,/^(?:anders\b)/i,/^(?:[a-zA-Z\x7f-\uffff][a-zA-Z\x7f-\uffff0-9_"\]""\|"{}"["]*)/i,/^(?:\.\.\.)/i,/^(?:…)/i,/^(?:$)/i],
+rules: [/^(?:\s+)/i,/^(?:\t+)/i,/^(?:'[^\n]*)/i,/^(?:\/\*(.|\n|\r)*?\*\/)/i,/^(?:\/\/[^\n]*)/i,/^(?:#[^\n]*)/i,/^(?:\()/i,/^(?:\))/i,/^(?:pi\b)/i,/^(?:π)/i,/^(?:==)/i,/^(?:>=)/i,/^(?:<=)/i,/^(?:>)/i,/^(?:<)/i,/^(?:!|niet\b)/i,/^(?:onwaar\b)/i,/^(?:waar\b)/i,/^(?:=)/i,/^(?::=)/i,/^(?:[0-9]*["."","][0-9]+([Ee][+-]?[0-9]+)?)/i,/^(?:[0-9]+["."","][0-9]*([Ee][+-]?[0-9]+)?)/i,/^(?:[0-9]+([Ee][+-]?[0-9]+)?)/i,/^(?:\^)/i,/^(?:\+)/i,/^(?:-)/i,/^(?:\*)/i,/^(?:\/)/i,/^(?:eindals\b)/i,/^(?:als\b)/i,/^(?:dan\b)/i,/^(?:stop\b)/i,/^(?:anders\b)/i,/^(?:\.\.\.)/i,/^(?:…)/i,/^(?:[a-zA-Z\x7f-\uffff][a-zA-Z\x7f-\uffff0-9_"\]""\|"{}"["]*)/i,/^(?:$)/i],
 conditions: {"INITIAL":{"rules":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36],"inclusive":true}}
 });
 return lexer;
