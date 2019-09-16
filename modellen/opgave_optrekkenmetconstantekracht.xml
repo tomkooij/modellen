@@ -1,4 +1,5 @@
 <modelleertaal>
+N = 3000
 <modelregels>
 # Opgave optrekken met constante kracht
 Fwl = -k * v^2
