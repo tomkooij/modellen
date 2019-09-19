@@ -22,7 +22,7 @@ x = x + dx
 t = t + dt
 
 Pm = Fm * v
-Pw = (Fwrol + Fwl) * -v
+Pw = (Fwrol + Fwl) * v
 Pres = Pm + Pw
 </modelregels>
 </modelleertaal>
