@@ -16,6 +16,7 @@ var model_index = [
 		{title: "Een sprong bij volleybal (examen vwo 2015 I) UITWERKING", url: "modellen/Een_sprong_bij_volleybal_(examen_vwo_2015_I)_UITWERKING.xml"},
 		{title: "Fietser UITWERKING", url: "modellen/opgave_fietser.xml"},
 		{title: "Horizontaal massa veersysteem", url: "modellen/Horizontaal_massa_veersysteem.xml"},
+		{title: "Horizontaal massa veersysteem UITWERKING", url: "modellen/Horizontaal_massa_veersysteem_UITWERKING.xml"},
 		{title: "Optrekken met constant vermogen", url: "modellen/opgave_optrekkenmetconstantvermogen.xml"},
 		{title: "Optrekken met constant vermogen UITWERKING", url: "modellen/opgave_optrekkenmetconstantvermogen_antwoord.xml"},
 		{title: "Optrekken met constante kracht", url: "modellen/opgave_optrekkenmetconstantekracht.xml"},
