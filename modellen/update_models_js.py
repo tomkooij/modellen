@@ -71,9 +71,12 @@ def main():
             fn = fn_new
         if fn not in bestanden_in_models_js:
             print(f'new file: {fn}')
-            # default titel = bestandsnaam
-            titel = maak_eerste_letter_hoofdletter(fn.replace('_', ' '))
+            assert fn[-4:] == '.xml', 'ABORT: filename != *.xml'
             path = fn_to_path(fn)
+
+            # default titel = bestandsnaam zonder .xml
+            titel = maak_eerste_letter_hoofdletter(fn.replace('_', ' '))
+            titel = titel[:-4]  # remove '.xml'
             modellen[path] = titel
 
     write_models_js(modellen)
