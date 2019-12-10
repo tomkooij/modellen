@@ -56,7 +56,7 @@ Do not edit below this line: Change config.js above!
             },
             {
                 id: "#permalink",
-                action: "hide"
+                action: "show"
             },
             {
                 id: "#open_file_dialog",
@@ -158,6 +158,11 @@ Do not edit below this line: Change config.js above!
                 </select>
                 <a id="permalink" href="foobar">(link)</a>
                 <span id="open_file_dialog">of: <input type="file" id="fileinput"></span>
+                <p>
+                <span id="download_xml_dialog">
+                <input id="download_xml" type="button" value="Download Modelregels:">
+                <input type="text" id="xml_filename" value="model.xml" size=15><br>
+                </span>
             </div>
     </div>
     <div id="werkBlad">
@@ -219,8 +224,6 @@ Do not edit below this line: Change config.js above!
         <div id="hacks">
             <input id="set_max_rows" type="button" value="Reduceer aantal punten in plot tot maximaal: ">
             <input type="text" id="max_rows" value="100" size=5><br>
-            <input id="download_xml" type="button" value="Download Modelregels:">
-            <input type="text" id="xml_filename" value="model.xml" size=15><br>
             <input id="download_pgf" type="button" value="Download PGFPlot:">
             <input type="text" id="pgf_filename" value="pgfplot.tex" size=15><br>
             <input id="download_tsv" type="button" value="Download TSV:">

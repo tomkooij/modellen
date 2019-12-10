@@ -17,6 +17,7 @@ var full_webapp = [
             {id: "#model_keuze", action: "show"},
             {id: "#permalink", action: "show"},
             {id: "#open_file_dialog", action: "show"},
+            {id: "#download_xml_dialog", action: "show"},
             // model blok
             {id: "#continue_dialog", action: "show"},
             {id: "#debugger_dialog", action: "show"},
@@ -28,7 +29,8 @@ var leerling_versie = [
             // bovenste blok
             {id: "#model_keuze", action: "show"},
             {id: "#permalink", action: "hide"},
-            {id: "#open_file_dialog", action: "hide"},
+            {id: "#open_file_dialog", action: "show"},
+            {id: "#download_xml_dialog", action: "show"},
             // model blok
             {id: "#continue_dialog", action: "hide"},
             {id: "#debugger_dialog", action: "hide"},
