@@ -1,3 +1,7 @@
-# c2modellen
+# modellen
 
-Modellen en webapp voor module C2 energie en arbeid
+Demo webapp voor modelleertaal
+
+www.tomkooij.nl/modellen
+
+www.github.com/tomkooij/modelleertaal
