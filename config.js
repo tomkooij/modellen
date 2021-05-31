@@ -5,19 +5,18 @@
 var config_js_loaded = true;
 
 
-var N_default = 1000;		// default waarde voor N (aantal iteraties)
-var base_url = 'https://www.tomkooij.nl/modellen';
+var N_default = 500;		// default waarde voor N (aantal iteraties)
+var base_url = 'https://www.tomkooij.nl/modelleertaal';
 
 // titelbalk bovenaan
-var title = 'Numerieke modellen';
-var title_link = 'https://www.github.com/tomkooij/modellen';
+var title = 'Modelleertaal';
+var title_link = 'https://www.github.com/tomkooij/modelleertaal';
 
 // definitie van het "profiel", welke knoppen staan aan enz.
 var full_webapp = [
             {id: "#model_keuze", action: "show"},
             {id: "#permalink", action: "show"},
             {id: "#open_file_dialog", action: "show"},
-            {id: "#download_xml_dialog", action: "show"},
             // model blok
             {id: "#continue_dialog", action: "show"},
             {id: "#debugger_dialog", action: "show"},
@@ -29,8 +28,7 @@ var leerling_versie = [
             // bovenste blok
             {id: "#model_keuze", action: "show"},
             {id: "#permalink", action: "hide"},
-            {id: "#open_file_dialog", action: "show"},
-            {id: "#download_xml_dialog", action: "show"},
+            {id: "#open_file_dialog", action: "hide"},
             // model blok
             {id: "#continue_dialog", action: "hide"},
             {id: "#debugger_dialog", action: "hide"},
@@ -38,4 +36,4 @@ var leerling_versie = [
           ];
 
 var profiellen = [leerling_versie, full_webapp];
-var actieve_profiel = 0;  //  het profiel dat als eerste geladen wordt. Telt vanaf 0.
+var actieve_profiel = 0;   // het profiel dat als eerste geladen wordt. Telt vanaf 0.
